@@ -17,8 +17,8 @@ class Header extends React.Component {
     render(){
         return(
             <header>
-            <nav className="container navbar navbar-expand-lg navbar-light justify-content-between">
-                <a className="navbar-brand" href="#">ReactJS - Hakan </a>
+            <nav className="container navbar navbar-expand-lg justify-content-between">
+                <Link to="/" className="navbar-brand">HomeWork</Link>
                 <button className="navbar-toggler" type="button" onClick={this.buttonClicked.bind(this)}>
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -28,7 +28,7 @@ class Header extends React.Component {
                             <Link to="/" activeClassName="active" className="nav-link">Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/contanct" activeClassName="active" className="nav-link">Contanct</Link>
+                            <Link to="/contact" activeClassName="active" className="nav-link">Contact</Link>
                         </li>
                         <li className="nav-item">
                             <Link to="/about" activeClassName="active" className="nav-link">About</Link>
